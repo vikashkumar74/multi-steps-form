@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>multi-step-form-main</title>
+  <link rel="wedsite icon" href="/images/favicon-32x32.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main>
+
+    <section class="section">
+      <div class="left">
+        <img class="desktop-img" src="./images/bg-sidebar-desktop.svg" alt="sidebar-image" />
+        <img class="mobile-img" src="./images/bg-sidebar-mobile.svg" alt="mobile-size-image" />
+        <div class="menu">
+          <div class="steps">
+            <span class="num active" data-formno="1" id="step-1">1</span>
+            <span class="slot">
+              <p class="step-color">STEP 1</p>
+              <p>YOUR INFO</p>
+            </span>
+          </div>
+          <div class="steps">
+            <span class="num" data-formno="2" id="step-2">2</span>
+            <span class="slot">
+              <p class="step-color">STEP 2</p>
+              <p>SELECT PLAN</p>
+            </span>
+          </div>
+          <div class="steps">
+            <span class="num v" data-formno="3" id="step-3">3</span>
+            <span class="slot">
+              <p class="step-color">STEP 3</p>
+              <p>ADD-ONS</p>
+            </span>
+          </div>
+          <div class="steps">
+            <span class="num" data-formno="4" id="step-4">4</span>
+            <span class="slot">
+              <p class="step-color">STEP 4</p>
+              <p>SUMMARY</p>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="right " id="form-1">
+        <div>
+          <h1>personal info</h1>
+          <span>please provide your,email address,and phone number.</span>
+        </div>
+        <div>
+          <div class="input-box">
+            <p>Name</p>
+            <input type="text" placeholder="e.g;stephen king" />
+          </div>
+          <div class="input-box">
+            <p>Email Address</p>
+            <input type="email" placeholder="e.g;stephenlorem@gmail.com" />
+          </div>
+          <div class="input-box">
+            <p>Phone Number</p>
+            <input type="number" placeholder="e.g;+1 234 567 890" />
+          </div>
+        </div>
+      </div>
+
+      <!-- second-form -->
+      <div class="right" id="form-2">
+        <div>
+          <h1>select your plan</h1>
+          <span>you have the of monthly or yearly billing</span>
+        </div>
+        <div class="plan-box">
+          <div class="sub-plan-box" id="arcade-box">
+            <div>
+              <img src="./images/icon-arcade.svg" alt="arcade-image">
+            </div>
+            <div>
+              <h1 class="arcade">Arcade</h1>
+              <span class="arcade-bill" value="9">$9/mo</span>
+              <p class="free-months"> </p>
+            </div>
+          </div>
+          <div class="sub-plan-box" id="advanced-box">
+            <div>
+              <img src="./images/icon-advanced.svg" alt="Advanced-image">
+            </div>
+            <div>
+
+              <h1 class="advanced ">Advanced</h1>
+
+              <span class="advanced-bill">$12/mo</span>
+              <p class="free-months"> </p>
+              <span> </span>
+            </div>
+          </div>
+          <div class="sub-plan-box" id="pro-box">
+            <div>
+              <img src="./images/icon-pro.svg" alt="pro-image">
+            </div>
+            <div>
+
+              <h1 class="pro">Pro</h1>
+              <span class="pro-bill">$15/mo</span>
+              <p class="free-months"> </p>
+            </div>
+          </div>
+        </div>
+        <div class="switch-box">
+          <span class="monthly">monthly</span>
+          <span class="Switch">
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label>
+          </span>
+          <span class="yearly">yearly</span>
+        </div>
+      </div>
+      <!-- </div> -->
+      <!-- third form section -->
+      <div class="right" id="form-3">
+        <div>
+          <h1>Pick add-ons</h1>
+          <span>Add-ons help enhance your gaming experience.</span>
+        </div>
+        <div class="box" id="box-1">
+          <div class="checkbox">
+            <input class="input-box-1" type="checkbox">
+            <div class="">
+              <p class="online-service">Online service</p>
+              <span>Access to multiplayer games</span>
+            </div>
+          </div>
+          <span class="price online-servces-amount"> +$1/mo</span>
+        </div>
+        <div class="box" id="box-2">
+          <div class="checkbox">
+            <input class="input-box-2" type="checkbox">
+            <div class="">
+              <p class="storage">Larger storage</p>
+              <span>Extra 1TB of cloud save</span>
+            </div>
+          </div>
+          <span class="price storage-amount"> +$2/mo</span>
+        </div>
+        <div class="box" id="box-3">
+          <div class="checkbox">
+            <input class="input-box-3" type="checkbox">
+            <div class="">
+              <p class="customizable">Customizable profile</p>
+              <span>Custom theame one your profile</span>
+            </div>
+          </div>
+          <span class="price customizable-amount"> +$2/mo</span>
+        </div>
+      </div>
+      <!-- last-form-section -->
+      <div class="right" id="form-4">
+        <div>
+          <h1>Finishing up</h1>
+          <span> Double-check everything looks OK before confirming</span>
+
+        </div>
+        <div class="content">
+          <div class="items-box" id="selected-plan-box">
+            <span>
+              <p class="plan"> </p>
+              <a href="#form-2">change</a>
+            </span>
+            <span class="amount"></span>
+          </div>
+          <div class="items-box">
+            <p class="on"> </p>
+            <span class="sa"></span>
+          </div>
+          <div class="items-box">
+            <p class="s"> </p>
+            <span class="SA"></span>
+          </div>
+          <div class="items-box">
+            <p class="C"> </p>
+            <span class="CA"></span>
+          </div>
+        </div>
+        <div class="total-amount">
+          <p>Total</p>
+          <span class="total"></span>
+        </div>
+      </div>
+      <div class="right " id="form-5">
+        <div class="comform-mes">
+          <img class="sucess-img" src="./images/icon-thank-you.svg" alt="">
+          <h1>Thank you</h1>
+          <p>Thanks for cnfirmng your subscription! We hope you have fun using our platform.if you ever need support,
+            please frrl free to us at support@ loremgaming.com</p>
+        </div>
+      </div>
+      <!-- button section -->
+      <div class="next-btn">
+        <button class="go-back-btn">Go Back</button>
+        <button class="btn">Next step</button>
+      </div>
+
+    </section>
+ 
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
